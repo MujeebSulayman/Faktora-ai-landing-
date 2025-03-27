@@ -15,15 +15,17 @@ export default function Home() {
           <Image src="/faktora-logo.png" alt="Faktora Logo" width={48} height={48} className="mr-2 hidden sm:block" />
         </div>
         <div className="flex items-center gap-3 sm:gap-6">
-          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body">
+          <Link href="https://faktora-ai.gitbook.io/" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body" target="_blank" rel="noopener noreferrer">
             Docs
           </Link>
-          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body">
+          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body" target="_blank" rel="noopener noreferrer">
             Community
           </Link>
           <Link
-            href="#"
-            className="bg-[#2463eb] text-white text-xs sm:text-sm px-3 sm:px-5 py-1.5 sm:py-2 rounded-md hover:bg-[#3773f4] transition-colors font-medium font-body"
+            href="https://app.faktora.ai"
+            className="bg-[#2463eb] text-white text-xs sm:text-sm px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-md hover:bg-[#3773f4] transition-colors font-medium font-body"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Open App
           </Link>
@@ -643,12 +645,14 @@ export default function Home() {
           <Image src="/faktora-logo.png" alt="Faktora Logo" width={48} height={48} className="mr-2 hidden sm:block" />
         </div>
         <div className="flex items-center gap-3 sm:gap-6">
-          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body">
+          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body" target="_blank" rel="noopener noreferrer">
             Docs
           </Link>
           <Link
             href="#"
             className="text-xs sm:text-sm bg-[#2463eb] text-white px-3 sm:px-4 py-1 sm:py-2 rounded-md hover:bg-[#3773f4] transition-colors font-body"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Community
           </Link>
