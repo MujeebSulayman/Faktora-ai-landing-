@@ -28,17 +28,18 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 pt-0 pb-6 sm:pb-12">
+      <section className="container mx-auto px-4 pt-8 pb-16 sm:pb-24 bg-[#f8f9fa]">
         <div className="flex flex-col items-center">
           {/* Robot Arm Image */}
-          <div className="w-full flex justify-center mb-2 sm:mb-4">
-            <div className="relative" style={{ width: "180px", height: "180px" }}>
+          <div className="w-full flex justify-center mb-6 sm:mb-8">
+            <div className="relative" style={{ width: "300px", height: "300px" }}>
               <Image
-                src="/robot-arm.svg"
+                src="/robot-arm.png"
                 alt="Robotic Arm"
-                width={180}
-                height={180}
+                width={300}
+                height={300}
                 className="absolute top-0"
+                priority
                 style={{ objectFit: "contain" }}
               />
             </div>
@@ -46,13 +47,13 @@ export default function Home() {
 
           {/* Text Content */}
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-xl sm:text-2xl font-medium mb-1">
+            <h1 className="text-2xl sm:text-3xl font-medium mb-1">
               <span className="text-[#2463eb]">Talk to AI.</span> Execute on-chain.
             </h1>
-            <h1 className="text-xl sm:text-2xl font-medium mb-4 sm:mb-6">Automate Defi.</h1>
+            <h1 className="text-2xl sm:text-3xl font-medium mb-6 sm:mb-8">Automate Defi.</h1>
             <Link
               href="#"
-              className="bg-[#2463eb] text-white text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-1.5 rounded hover:bg-[#3773f4] transition-colors inline-block font-medium"
+              className="bg-[#2463eb] text-white text-sm sm:text-md px-5 sm:px-4 py-2 sm:py-2 rounded hover:bg-[#3773f4] transition-colors inline-block font-medium"
             >
               Open App
             </Link>
@@ -63,55 +64,59 @@ export default function Home() {
       {/* Features Section */}
       <section className="container mx-auto px-4 py-6 sm:py-10 bg-[#f8f9fa]">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-lg sm:text-xl font-medium mb-8 text-left">
-            On-chain Intelligence advantage
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
-            {/* Feature 1 */}
-            <div className="bg-[#2463eb] rounded-2xl p-5 sm:p-6 text-white">
-              <div className="mb-3 p-2 inline-block rounded-full bg-[#3773f4]">
-                <Bot size={18} className="sm:hidden text-white" />
-                <Bot size={22} className="hidden sm:block text-white" />
-              </div>
-              <h3 className="text-base sm:text-lg font-medium mb-1">AI Wallet Agents</h3>
-              <p className="text-xs sm:text-sm opacity-90">Autonomous wallets with smart execution logic.</p>
-            </div>
-
-            {/* Feature 2 */}
-            <div className="bg-[#f1f5fd] rounded-2xl p-5 sm:p-6">
-              <div className="mb-3 p-2 inline-block rounded-full bg-[#d2dbea]">
-                <FileText size={18} className="sm:hidden text-[#2463eb]" />
-                <FileText size={22} className="hidden sm:block text-[#2463eb]" />
-              </div>
-              <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb]">
-                Multi-agent orchestration
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-600">Agents talk to each other to coordinate complex strategies.</p>
+          <div className="flex flex-col md:flex-row">
+            {/* Left side - Header */}
+            <div className="md:w-1/4 mb-6 md:mb-0 md:pt-4">
+              <h2 className="text-lg sm:text-xl font-medium">
+                On-chain Intelligence advantage
+              </h2>
             </div>
             
-            {/* Feature 3 */}
-            <div className="bg-[#f1f5fd] rounded-2xl p-5 sm:p-6">
-              <div className="mb-3 p-2 inline-block rounded-full bg-[#d2dbea]">
-                <MessageSquare size={18} className="sm:hidden text-[#2463eb]" />
-                <MessageSquare size={22} className="hidden sm:block text-[#2463eb]" />
+            {/* Right side - Cards */}
+            <div className="md:w-3/4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                {/* Feature 1 */}
+                <div className="bg-[#2463eb] rounded-2xl p-5 sm:p-6 text-white">
+                  <div className="mb-3 p-2 inline-block rounded-lg bg-[#3773f4]">
+                    <Image src="/ai-wallet.png" alt="AI Wallet" width={32} height={32} />
+                  </div>
+                  <h3 className="text-base sm:text-lg font-medium mb-1">AI Wallet Agents</h3>
+                  <p className="text-xs sm:text-sm opacity-90">Autonomous wallets with smart execution logic.</p>
+                </div>
+
+                {/* Feature 2 */}
+                <div className="bg-[#f1f5fd] rounded-2xl p-5 sm:p-6">
+                  <div className="mb-3 p-2 inline-block rounded-lg bg-[#d2dbea]">
+                    <Image src="/multi.png" alt="Multi-agent orchestration" width={24} height={24} />
+                  </div>
+                  <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb]">
+                    Multi-agent orchestration
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-600">Agents talk to each other to coordinate complex strategies.</p>
+                </div>
+                
+                {/* Feature 3 */}
+                <div className="bg-[#f1f5fd] rounded-2xl p-5 sm:p-6">
+                  <div className="mb-3 p-2 inline-block rounded-lg bg-[#d2dbea]">
+                    <Image src="/natural.png" alt="AI Wallet" width={24} height={24} />
+                  </div>
+                  <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb]">
+                    Natural Language Acquisition
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-600">Talk to your agent like a human. Real commands. Real execution.</p>
+                </div>
+                
+                {/* Feature 4 */}
+                <div className="bg-[#f1f5fd] rounded-2xl p-5 sm:p-6">
+                  <div className="mb-3 p-2 inline-block rounded-lg bg-[#d2dbea]">
+                    <Image src="/unified.png" alt="AI Wallet" width={24} height={24} />
+                  </div>
+                  <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb]">
+                    Unified Liquidity Access
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-600">Faktora AI Agents identify optimal routes and act autonomously.</p>
+                </div>
               </div>
-              <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb]">
-                Natural Language Acquisition
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-600">Talk to your agent like a human. Real commands. Real execution.</p>
-            </div>
-            
-            {/* Feature 4 */}
-            <div className="bg-[#f1f5fd] rounded-2xl p-5 sm:p-6">
-              <div className="mb-3 p-2 inline-block rounded-full bg-[#d2dbea]">
-                <Zap size={18} className="sm:hidden text-[#2463eb]" />
-                <Zap size={22} className="hidden sm:block text-[#2463eb]" />
-              </div>
-              <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb]">
-                Unified Liquidity Access
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-600">Faktora AI Agents identify optimal routes and act autonomously.</p>
             </div>
           </div>
         </div>
