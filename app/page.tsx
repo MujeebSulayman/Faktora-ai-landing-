@@ -6,21 +6,21 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="container mx-auto px-4 py-3 flex justify-between items-center">
+      <header className="container mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Image src="/faktora-logo.svg" alt="Faktora Logo" width={30} height={30} className="mr-1" />
-          <span className="font-bold text-lg">ai</span>
+          <Image src="/faktora-logo.png" alt="Faktora Logo" width={28} height={28} className="mr-1 sm:hidden" />
+          <Image src="/faktora-logo.png" alt="Faktora Logo" width={48} height={48} className="mr-2 hidden sm:block" />
         </div>
-        <div className="flex items-center gap-2 sm:gap-4">
-          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4]">
+        <div className="flex items-center gap-3 sm:gap-6">
+          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body">
             Docs
           </Link>
-          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4]">
+          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body">
             Community
           </Link>
           <Link
             href="#"
-            className="bg-[#2463eb] text-white text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-1.5 rounded hover:bg-[#3773f4] transition-colors font-medium"
+            className="bg-[#2463eb] text-white text-xs sm:text-sm px-3 sm:px-5 py-1.5 sm:py-2 rounded-md hover:bg-[#3773f4] transition-colors font-medium font-body"
           >
             Open App
           </Link>
@@ -28,32 +28,30 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 pt-8 pb-16 sm:pb-24 bg-[#f8f9fa]">
+      <section className="container mx-auto px-4 pt-6 sm:pt-12 pb-12 sm:pb-24">
         <div className="flex flex-col items-center">
           {/* Robot Arm Image */}
-          <div className="w-full flex justify-center mb-6 sm:mb-8">
-            <div className="relative" style={{ width: "300px", height: "300px" }}>
+          <div className="w-full flex justify-center mb-4 sm:mb-8">
+            <div className="relative w-[200px] h-[200px] sm:w-[300px] sm:h-[300px]">
               <Image
                 src="/robot-arm.png"
                 alt="Robotic Arm"
-                width={300}
-                height={300}
-                className="absolute top-0"
+                fill
+                className="object-contain"
                 priority
-                style={{ objectFit: "contain" }}
               />
             </div>
           </div>
 
           {/* Text Content */}
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-2xl sm:text-3xl font-medium mb-1">
+            <h1 className="text-xl sm:text-3xl font-medium mb-1 font-heading">
               <span className="text-[#2463eb]">Talk to AI.</span> Execute on-chain.
             </h1>
-            <h1 className="text-2xl sm:text-3xl font-medium mb-6 sm:mb-8">Automate Defi.</h1>
+            <h1 className="text-xl sm:text-3xl font-medium mb-4 sm:mb-8 font-heading">Automate Defi.</h1>
             <Link
               href="#"
-              className="bg-[#2463eb] text-white text-sm sm:text-md px-5 sm:px-4 py-2 sm:py-2 rounded hover:bg-[#3773f4] transition-colors inline-block font-medium"
+              className="bg-[#2463eb] text-white text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-2.5 rounded-md hover:bg-[#3773f4] transition-colors inline-block font-medium font-body"
             >
               Open App
             </Link>
@@ -62,59 +60,59 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 py-6 sm:py-10 bg-[#f8f9fa]">
+      <section className="container mx-auto px-4 py-8 sm:py-16 bg-[#f8f9fa]">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
             {/* Left side - Header */}
             <div className="md:w-1/4 mb-6 md:mb-0 md:pt-4">
-              <h2 className="text-lg sm:text-xl font-medium">
+              <h2 className="text-lg sm:text-xl font-medium font-heading">
                 On-chain Intelligence advantage
               </h2>
             </div>
             
             {/* Right side - Cards */}
             <div className="md:w-3/4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 {/* Feature 1 */}
-                <div className="bg-[#2463eb] rounded-2xl p-5 sm:p-6 text-white">
+                <div className="bg-[#2463eb] rounded-xl p-4 sm:p-6 text-white">
                   <div className="mb-3 p-2 inline-block rounded-lg bg-[#3773f4]">
-                    <Image src="/ai-wallet.png" alt="AI Wallet" width={32} height={32} />
+                    <Image src="/ai-wallet.png" alt="AI Wallet" width={24} height={24} className="sm:w-8 sm:h-8" />
                   </div>
-                  <h3 className="text-base sm:text-lg font-medium mb-1">AI Wallet Agents</h3>
-                  <p className="text-xs sm:text-sm opacity-90">Autonomous wallets with smart execution logic.</p>
+                  <h3 className="text-base sm:text-lg font-medium mb-1 font-heading">AI Wallet Agents</h3>
+                  <p className="text-xs sm:text-sm opacity-90 font-body">Autonomous wallets with smart execution logic.</p>
                 </div>
 
                 {/* Feature 2 */}
-                <div className="bg-[#f1f5fd] rounded-2xl p-5 sm:p-6">
+                <div className="bg-[#f1f5fd] rounded-xl p-4 sm:p-6">
                   <div className="mb-3 p-2 inline-block rounded-lg bg-[#d2dbea]">
-                    <Image src="/multi.png" alt="Multi-agent orchestration" width={24} height={24} />
+                    <Image src="/multi.png" alt="Multi-agent orchestration" width={20} height={20} className="sm:w-6 sm:h-6" />
                   </div>
-                  <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb]">
+                  <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb] font-heading">
                     Multi-agent orchestration
                   </h3>
-                  <p className="text-xs sm:text-sm text-gray-600">Agents talk to each other to coordinate complex strategies.</p>
+                  <p className="text-xs sm:text-sm text-gray-600 font-body">Agents talk to each other to coordinate complex strategies.</p>
                 </div>
                 
                 {/* Feature 3 */}
-                <div className="bg-[#f1f5fd] rounded-2xl p-5 sm:p-6">
+                <div className="bg-[#f1f5fd] rounded-xl p-4 sm:p-6">
                   <div className="mb-3 p-2 inline-block rounded-lg bg-[#d2dbea]">
-                    <Image src="/natural.png" alt="AI Wallet" width={24} height={24} />
+                    <Image src="/natural.png" alt="AI Wallet" width={20} height={20} className="sm:w-6 sm:h-6" />
                   </div>
-                  <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb]">
+                  <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb] font-heading">
                     Natural Language Acquisition
                   </h3>
-                  <p className="text-xs sm:text-sm text-gray-600">Talk to your agent like a human. Real commands. Real execution.</p>
+                  <p className="text-xs sm:text-sm text-gray-600 font-body">Talk to your agent like a human. Real commands. Real execution.</p>
                 </div>
                 
                 {/* Feature 4 */}
-                <div className="bg-[#f1f5fd] rounded-2xl p-5 sm:p-6">
+                <div className="bg-[#f1f5fd] rounded-xl p-4 sm:p-6">
                   <div className="mb-3 p-2 inline-block rounded-lg bg-[#d2dbea]">
-                    <Image src="/unified.png" alt="AI Wallet" width={24} height={24} />
+                    <Image src="/unified.png" alt="AI Wallet" width={20} height={20} className="sm:w-6 sm:h-6" />
                   </div>
-                  <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb]">
+                  <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb] font-heading">
                     Unified Liquidity Access
                   </h3>
-                  <p className="text-xs sm:text-sm text-gray-600">Faktora AI Agents identify optimal routes and act autonomously.</p>
+                  <p className="text-xs sm:text-sm text-gray-600 font-body">Faktora AI Agents identify optimal routes and act autonomously.</p>
                 </div>
               </div>
             </div>
@@ -123,160 +121,122 @@ export default function Home() {
       </section>
 
       {/* Architecture Flow Section */}
-      <section className="container mx-auto px-4 py-8 sm:py-24 text-center">
+      <section className="container mx-auto px-4 py-8 sm:py-16 text-center">
         <div className="max-w-5xl mx-auto">
-          <div className="hidden sm:flex justify-between items-center mb-6">
-            <div className="flex flex-col items-center">
-              <div className="bg-[#eaebed] p-2 rounded-md mb-2">
-                <MessageSquare size={20} />
+          <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4">
+            {/* User */}
+            <div className="flex flex-col items-center mx-1 sm:mx-2">
+              <div className="relative h-6 w-6 sm:h-8 sm:w-8 flex items-center justify-center mb-1 sm:mb-2">
+                <Image src="/user.png" alt="User" width={24} height={24} className="object-contain sm:w-8 sm:h-8" />
               </div>
-              <span className="text-[10px] font-medium">User</span>
+              <span className="text-[10px] sm:text-xs font-medium text-gray-600 font-body">User</span>
             </div>
-            <div className="h-[2px] flex-grow mx-2 bg-[#bbbbbb]"></div>
 
-            <div className="flex flex-col items-center">
-              <div className="bg-[#eaebed] p-2 rounded-md mb-2">
-                <Bot size={20} />
-              </div>
-              <span className="text-[10px] font-medium">AI Agent</span>
+            {/* Arrow */}
+            <div className="mx-1 sm:mx-4">
+              <Image src="/arrow.png" alt="Arrow" width={16} height={16} className="sm:w-6 sm:h-6" />
             </div>
-            <div className="h-[2px] flex-grow mx-2 bg-[#bbbbbb]"></div>
 
-            <div className="flex flex-col items-center">
-              <div className="bg-[#eaebed] p-2 rounded-md mb-2">
-                <Users size={20} />
+            {/* AI Agent */}
+            <div className="flex flex-col items-center mx-1 sm:mx-2">
+              <div className="relative h-6 w-6 sm:h-8 sm:w-8 flex items-center justify-center mb-1 sm:mb-2">
+                <Image src="/agent.png" alt="AI Agent" width={24} height={24} className="object-contain sm:w-8 sm:h-8" />
               </div>
-              <span className="text-[10px] font-medium">
+              <span className="text-[10px] sm:text-xs font-medium text-gray-600 font-body">AI Agent</span>
+            </div>
+
+            {/* Arrow */}
+            <div className="mx-1 sm:mx-4">
+              <Image src="/arrow.png" alt="Arrow" width={16} height={16} className="sm:w-6 sm:h-6" />
+            </div>
+
+            {/* Multi-agent Orchestration */}
+            <div className="flex flex-col items-center mx-1 sm:mx-2">
+              <div className="relative h-6 w-6 sm:h-8 sm:w-8 flex items-center justify-center mb-1 sm:mb-2">
+                <Image src="/multi-agent.png" alt="Multi-agent Orchestration" width={24} height={24} className="object-contain sm:w-8 sm:h-8" />
+              </div>
+              <span className="text-[10px] sm:text-xs font-medium text-gray-600 font-body">
                 Multi-agent<br />
                 Orchestration
               </span>
             </div>
-            <div className="h-[2px] flex-grow mx-2 bg-[#bbbbbb]"></div>
 
-            <div className="flex flex-col items-center">
-              <div className="bg-[#eaebed] p-2 rounded-md mb-2">
-                <FileText size={20} />
+            {/* Arrow */}
+            <div className="mx-1 sm:mx-4">
+              <Image src="/arrow.png" alt="Arrow" width={16} height={16} className="sm:w-6 sm:h-6" />
+            </div>
+
+            {/* Smart Contract Execution */}
+            <div className="flex flex-col items-center mx-1 sm:mx-2">
+              <div className="relative h-6 w-6 sm:h-8 sm:w-8 flex items-center justify-center mb-1 sm:mb-2">
+                <Image src="/smart-contract.png" alt="Smart Contract Execution" width={24} height={24} className="object-contain sm:w-8 sm:h-8" />
               </div>
-              <span className="text-[10px] font-medium">
+              <span className="text-[10px] sm:text-xs font-medium text-gray-600 font-body">
                 Smart Contract<br />
                 Execution
               </span>
             </div>
-            <div className="h-[2px] flex-grow mx-2 bg-[#bbbbbb]"></div>
 
-            <div className="flex flex-col items-center">
-              <div className="bg-[#eaebed] p-2 rounded-md mb-2">
-                <Zap size={20} />
+            {/* Arrow */}
+            <div className="mx-1 sm:mx-4">
+              <Image src="/arrow.png" alt="Arrow" width={16} height={16} className="sm:w-6 sm:h-6" />
+            </div>
+
+            {/* On-Chain Results */}
+            <div className="flex flex-col items-center mx-1 sm:mx-2">
+              <div className="relative h-6 w-6 sm:h-8 sm:w-8 flex items-center justify-center mb-1 sm:mb-2">
+                <Image src="/onchain.png" alt="On-Chain Results" width={24} height={24} className="object-contain sm:w-8 sm:h-8" />
               </div>
-              <span className="text-[10px] font-medium">
+              <span className="text-[10px] sm:text-xs font-medium text-gray-600 font-body">
                 On-Chain<br />
                 Results
               </span>
             </div>
           </div>
-
-          {/* Mobile Architecture Flow */}
-          <div className="sm:hidden mb-5">
-            <div className="flex flex-wrap justify-center gap-4 mb-4">
-              <div className="flex flex-col items-center">
-                <div className="bg-[#eaebed] p-1.5 rounded-md mb-1">
-                  <MessageSquare size={16} />
-                </div>
-                <span className="text-[8px] font-medium">User</span>
-              </div>
-              
-              <div className="flex flex-col items-center">
-                <div className="bg-[#eaebed] p-1.5 rounded-md mb-1">
-                  <Bot size={16} />
-                </div>
-                <span className="text-[8px] font-medium">AI Agent</span>
-              </div>
-              
-              <div className="flex flex-col items-center">
-                <div className="bg-[#eaebed] p-1.5 rounded-md mb-1">
-                  <Users size={16} />
-                </div>
-                <span className="text-[8px] font-medium">
-                  Multi-agent<br />
-                  Orchestration
-                </span>
-              </div>
-            </div>
-            
-            <div className="flex flex-wrap justify-center gap-4">
-              <div className="flex flex-col items-center">
-                <div className="bg-[#eaebed] p-1.5 rounded-md mb-1">
-                  <FileText size={16} />
-                </div>
-                <span className="text-[8px] font-medium">
-                  Smart Contract<br />
-                  Execution
-                </span>
-              </div>
-              
-              <div className="flex flex-col items-center">
-                <div className="bg-[#eaebed] p-1.5 rounded-md mb-1">
-                  <Zap size={16} />
-                </div>
-                <span className="text-[8px] font-medium">
-                  On-Chain<br />
-                  Results
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <h2 className="text-lg sm:text-xl font-medium">You say it. Agents do it.</h2>
         </div>
       </section>
 
       {/* Use Cases Section */}
-      <section className="container mx-auto px-4 py-6 sm:py-10 bg-[#f8f9fa]">
+      <section className="container mx-auto px-4 py-8 sm:py-16">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-lg sm:text-xl font-medium mb-5 sm:mb-6">
-            How AI agents can help with your decisions
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+          <h2 className="text-2xl sm:text-3xl font-medium pb-6 sm:pb-10 text-center font-heading">You say it. Agents do it.</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {/* Use Case 1 */}
-            <div className="bg-[#f1f5fd] rounded-lg p-4 sm:p-5">
-              <p className="text-[#2463eb] font-medium mb-4 sm:mb-5 text-xs sm:text-sm">
+            <div className="bg-[#f1f5fd] rounded-lg p-5 sm:p-6">
+              <p className="text-[#2463eb] font-medium mb-4 sm:mb-5 text-sm sm:text-base font-heading">
                 'Swap half of my ETH for the top-yielding LSO and stake it'
               </p>
               <div className="flex items-center">
-                <div className="bg-[#d2dbea] p-1 sm:p-1.5 rounded-md mr-1.5 sm:mr-2">
-                  <Bot size={14} className="sm:hidden text-[#2463eb]" />
-                  <Bot size={16} className="hidden sm:block text-[#2463eb]" />
+                <div className="bg-[#d2dbea] p-1.5 sm:p-2 rounded-md mr-2 sm:mr-3">
+                  <Image src="/robot-agent.png" alt="Bot" width={16} height={16} className="sm:w-5 sm:h-5" />
                 </div>
-                <span className="text-[9px] sm:text-xs text-gray-600">Checking Lido, Ankr...</span>
+                <span className="text-xs sm:text-sm text-gray-600 font-body">Checking Lido, Ankr...</span>
               </div>
             </div>
 
             {/* Use Case 2 */}
-            <div className="bg-[#f1f5fd] rounded-lg p-4 sm:p-5">
-              <p className="text-[#2463eb] font-medium mb-4 sm:mb-5 text-xs sm:text-sm">
+            <div className="bg-[#f1f5fd] rounded-lg p-5 sm:p-6">
+              <p className="text-[#2463eb] font-medium mb-4 sm:mb-5 text-sm sm:text-base font-heading">
                 'Put 20% of my ETH into the highest lending yield'
               </p>
               <div className="flex items-center">
-                <div className="bg-[#d2dbea] p-1 sm:p-1.5 rounded-md mr-1.5 sm:mr-2">
-                  <Bot size={14} className="sm:hidden text-[#2463eb]" />
-                  <Bot size={16} className="hidden sm:block text-[#2463eb]" />
+                <div className="bg-[#d2dbea] p-1.5 sm:p-2 rounded-md mr-2 sm:mr-3">
+                  <Image src="/robot-agent.png" alt="Bot" width={16} height={16} className="sm:w-5 sm:h-5" />
                 </div>
-                <span className="text-[9px] sm:text-xs text-gray-600">Evaluates Aave, Compound, Morpho...</span>
+                <span className="text-xs sm:text-sm text-gray-600 font-body">Evaluates Aave, Compound, Morpho...</span>
               </div>
             </div>
             
             {/* Use Case 3 */}
-            <div className="bg-[#f1f5fd] rounded-lg p-4 sm:p-5">
-              <p className="text-[#2463eb] font-medium mb-4 sm:mb-5 text-xs sm:text-sm">
+            <div className="bg-[#f1f5fd] rounded-lg p-5 sm:p-6">
+              <p className="text-[#2463eb] font-medium mb-4 sm:mb-5 text-sm sm:text-base font-heading">
                 'Bridge to Sonic and farm the new meta'
               </p>
               <div className="flex items-center">
-                <div className="bg-[#d2dbea] p-1 sm:p-1.5 rounded-md mr-1.5 sm:mr-2">
-                  <Bot size={14} className="sm:hidden text-[#2463eb]" />
-                  <Bot size={16} className="hidden sm:block text-[#2463eb]" />
+                <div className="bg-[#d2dbea] p-1.5 sm:p-2 rounded-md mr-2 sm:mr-3">
+                  <Image src="/robot-agent.png" alt="Bot" width={16} height={16} className="sm:w-5 sm:h-5" />
                 </div>
-                <span className="text-[9px] sm:text-xs text-gray-600">Auto-bridges, allocates LP</span>
+                <span className="text-xs sm:text-sm text-gray-600 font-body">Auto-bridges, allocates LP</span>
               </div>
             </div>
           </div>
@@ -284,95 +244,66 @@ export default function Home() {
       </section>
       
       {/* Token Section */}
-      <section className="container mx-auto px-4 py-5 sm:py-8 mb-5 sm:mb-8">
-        <div className="max-w-6xl mx-auto bg-[#2463eb] rounded-lg p-4 sm:p-5 text-white">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 sm:mb-5">
+      <section className="container mx-auto px-4 py-8 sm:py-16 mb-4 sm:mb-8">
+        <div className="max-w-6xl mx-auto bg-[#2463eb] rounded-lg p-6 sm:p-10 text-white">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 sm:mb-10">
             <div>
-              <h2 className="text-lg sm:text-xl font-medium mb-1">$FAKT Powers your agents</h2>
-              <p className="text-[10px] sm:text-xs opacity-80">Unlock bonuses, fund execution, enable governance and more.</p>
+              <h2 className="text-lg sm:text-2xl font-medium mb-2 font-heading">$FAKT Powers your agents</h2>
+              <p className="text-xs sm:text-sm opacity-90 font-body">Unlock upgrades, fund execution, enable governance and more.</p>
             </div>
             <Link
               href="#"
-              className="bg-white text-[#2463eb] text-[10px] sm:text-xs px-3 sm:px-4 py-1 sm:py-1.5 rounded hover:bg-[#f1f5fd] transition-colors mt-3 md:mt-0 font-medium"
+              className="bg-white text-[#2463eb] text-xs sm:text-sm px-4 sm:px-5 py-1.5 sm:py-2.5 rounded-md hover:bg-[#f1f5fd] transition-colors mt-4 md:mt-0 font-medium font-body"
             >
               Read tokenomics
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-5 sm:mt-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mt-6 sm:mt-10">
             <div className="flex flex-col items-center text-center">
-              <div className="bg-[#3773f4] p-1.5 sm:p-2 rounded-full mb-2 sm:mb-3">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:hidden">
-                  <path d="M12 17.8L5.8 14.4V6.8L12 3.4L18.2 6.8V14.4L12 17.8Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="hidden sm:block">
-                  <path d="M12 17.8L5.8 14.4V6.8L12 3.4L18.2 6.8V14.4L12 17.8Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+              <div className="bg-[#3773f4] p-2 sm:p-3 rounded-full mb-2 sm:mb-4">
+                <Image src="/star.png" alt="Premium" width={20} height={20} className="sm:w-6 sm:h-6" />
               </div>
-              <h3 className="text-[8px] sm:text-[10px] font-medium">
-                Access premium<br />
-                orchestration logic
-              </h3>
+              <h3 className="text-xs sm:text-base font-medium mb-1 font-heading">Access premium orchestration logic</h3>
             </div>
 
             <div className="flex flex-col items-center text-center">
-              <div className="bg-[#3773f4] p-1.5 sm:p-2 rounded-full mb-2 sm:mb-3">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:hidden">
-                  <path d="M12 16V21M12 16L18 21M12 16L6 21M20 4L12 12L4 4" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="hidden sm:block">
-                  <path d="M12 16V21M12 16L18 21M12 16L6 21M20 4L12 12L4 4" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+              <div className="bg-[#3773f4] p-2 sm:p-3 rounded-full mb-2 sm:mb-4">
+                <Image src="/broom.png" alt="Fine Tune" width={16} height={24} className="sm:w-5 sm:h-7" />
               </div>
-              <h3 className="text-[8px] sm:text-[10px] font-medium">
-                Pay for agents fine<br />
-                tune
-              </h3>
+              <h3 className="text-xs sm:text-base font-medium mb-1 font-heading">Pay for agents fine tune</h3>
             </div>
 
             <div className="flex flex-col items-center text-center">
-              <div className="bg-[#3773f4] p-1.5 sm:p-2 rounded-full mb-2 sm:mb-3">
-                <Users size={14} className="sm:hidden text-white" />
-                <Users size={16} className="hidden sm:block text-white" />
+              <div className="bg-[#3773f4] p-2 sm:p-3 rounded-full mb-2 sm:mb-4">
+                <Image src="/participate.png" alt="Governance" width={20} height={20} className="sm:w-6 sm:h-6" />
               </div>
-              <h3 className="text-[8px] sm:text-[10px] font-medium">
-                Participate in<br />
-                AI governance
-              </h3>
+              <h3 className="text-xs sm:text-base font-medium mb-1 font-heading">Participate in AI governance</h3>
             </div>
 
             <div className="flex flex-col items-center text-center">
-              <div className="bg-[#3773f4] p-1.5 sm:p-2 rounded-full mb-2 sm:mb-3">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:hidden">
-                  <path d="M21 9V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V9M21 9L12 3L3 9M21 9L3 9" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="hidden sm:block">
-                  <path d="M21 9V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V9M21 9L12 3L3 9M21 9L3 9" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+              <div className="bg-[#3773f4] p-2 sm:p-3 rounded-full mb-2 sm:mb-4">
+                <Image src="/fund-execution.png" alt="Fund" width={20} height={20} className="sm:w-6 sm:h-6" />
               </div>
-              <h3 className="text-[8px] sm:text-[10px] font-medium">
-                Fund execution<br />
-                pipelines
-              </h3>
+              <h3 className="text-xs sm:text-base font-medium mb-1 font-heading">Fund execution pipelines</h3>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="container mx-auto px-4 py-3 flex justify-between items-center">
+      <footer className="container mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Image src="/faktora-logo.svg" alt="Faktora Logo" width={24} height={24} className="mr-1 sm:hidden" />
-          <Image src="/faktora-logo.svg" alt="Faktora Logo" width={30} height={30} className="mr-1 hidden sm:block" />
-          <span className="font-bold text-base sm:text-lg">ai</span>
+          <Image src="/faktora-logo.png" alt="Faktora Logo" width={28} height={28} className="mr-1 sm:hidden" />
+          <Image src="/faktora-logo.png" alt="Faktora Logo" width={48} height={48} className="mr-2 hidden sm:block" />
         </div>
-        <div className="flex items-center gap-2 sm:gap-4">
-          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4]">
+        <div className="flex items-center gap-3 sm:gap-6">
+          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body">
             Docs
           </Link>
           <Link
             href="#"
-            className="text-xs sm:text-sm bg-[#2463eb] text-white px-3 sm:px-4 py-1 sm:py-1.5 rounded hover:bg-[#3773f4] transition-colors"
+            className="text-xs sm:text-sm bg-[#2463eb] text-white px-3 sm:px-4 py-1 sm:py-2 rounded-md hover:bg-[#3773f4] transition-colors font-body"
           >
             Community
           </Link>
