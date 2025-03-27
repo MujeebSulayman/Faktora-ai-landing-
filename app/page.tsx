@@ -4,8 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { Bot, MessageSquare, Zap, FileText, Users } from "lucide-react";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return <div className="min-h-screen bg-white flex items-center justify-center">Loading...</div>;
+  }
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}

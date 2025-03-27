@@ -3,10 +3,14 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: [],
-    unoptimized: process.env.NODE_ENV === 'production',
+    unoptimized: true,
   },
-  // Ensure trailing slashes are handled correctly
-  trailingSlash: true,
+  // Ensure proper handling of static assets
+  output: 'export',
+  // Disable server components since we're using client-side rendering
+  experimental: {
+    appDir: true,
+  },
 };
 
 module.exports = nextConfig;
