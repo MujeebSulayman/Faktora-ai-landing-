@@ -18,7 +18,7 @@ export default function Home() {
           <Link href="https://faktora-ai.gitbook.io/" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body" target="_blank" rel="noopener noreferrer">
             Docs
           </Link>
-          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body" target="_blank" rel="noopener noreferrer">
+          <Link href="https://T.me/faktoraAI" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body" target="_blank" rel="noopener noreferrer">
             Community
           </Link>
           <Link
