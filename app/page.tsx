@@ -33,16 +33,16 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 pt-6 sm:pt-12 pb-12 sm:pb-24">
+      <section className="container mx-auto px-4 pt-0 sm:pt-4 pb-8 sm:pb-24">
         <div className="flex flex-col items-center">
           {/* Robot Arm Image */}
           <motion.div 
-            className="w-full flex justify-center mb-4 sm:mb-8"
+            className="w-full flex justify-center mb-2 sm:mb-8 -mt-6 sm:-mt-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="relative w-[200px] h-[200px] sm:w-[300px] sm:h-[300px]">
+            <div className="relative w-[160px] h-[160px] sm:w-[300px] sm:h-[300px]">
               <Image
                 src="/robot-arm.png"
                 alt="Robotic Arm"
@@ -55,7 +55,7 @@ export default function Home() {
 
           {/* Text Content */}
           <motion.div 
-            className="text-center max-w-3xl mx-auto"
+            className="text-center max-w-3xl mx-auto px-2 sm:px-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -63,7 +63,7 @@ export default function Home() {
             <h1 className="text-xl sm:text-3xl font-medium mb-1 font-heading">
               <span className="text-[#2463eb]">Talk to AI.</span> Execute on-chain.
             </h1>
-            <h1 className="text-xl sm:text-3xl font-medium mb-4 sm:mb-8 font-heading">Automate Defi.</h1>
+            <h1 className="text-xl sm:text-3xl font-medium mb-3 sm:mb-8 font-heading">Automate Defi.</h1>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
