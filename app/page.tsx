@@ -69,8 +69,10 @@ export default function Home() {
               whileTap={{ scale: 0.95 }}
             >
               <Link
-                href="#"
+                href="https://app.faktora.ai"
                 className="bg-[#2463eb] text-white text-sm sm:text-md px-4 sm:px-6 py-2 sm:py-2.5 rounded-md hover:bg-[#3773f4] transition-colors inline-block font-medium font-body"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Open App
               </Link>
