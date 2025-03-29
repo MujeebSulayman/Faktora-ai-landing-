@@ -177,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* Architecture Flow Section */}
-      <section className="container mx-auto px-4 py-10 sm:py-20 bg-gradient-to-b from-white to-[#f8faff]">
+      <section className="container mx-auto px-4 py-10 sm:py-32">
         <div className="max-w-5xl mx-auto">
           <motion.h2 
             className="text-2xl sm:text-3xl font-medium mb-8 sm:mb-12 text-center font-heading"
@@ -201,7 +201,7 @@ export default function Home() {
             >
               <div className="bg-[#f1f5fd] rounded-xl p-4 flex-1">
                 <div className="flex items-center">
-                  <div className="bg-[#d2dbea] p-2 rounded-lg mr-3">
+                  <div className="p-2 rounded-lg mr-3">
                     <Image src="/user.png" alt="User" width={24} height={24} className="object-contain" />
                   </div>
                   <div>
@@ -231,7 +231,7 @@ export default function Home() {
             >
               <div className="bg-[#f1f5fd] rounded-xl p-4 flex-1">
                 <div className="flex items-center">
-                  <div className="bg-[#d2dbea] p-2 rounded-lg mr-3">
+                  <div className="p-2 rounded-lg mr-3">
                     <Image src="/agent.png" alt="AI Agent" width={24} height={24} className="object-contain" />
                   </div>
                   <div>
@@ -261,7 +261,7 @@ export default function Home() {
             >
               <div className="bg-[#f1f5fd] rounded-xl p-4 flex-1">
                 <div className="flex items-center">
-                  <div className="bg-[#d2dbea] p-2 rounded-lg mr-3">
+                  <div className="p-2 rounded-lg mr-3">
                     <Image src="/multi-agent.png" alt="Multi-agent Orchestration" width={24} height={24} className="object-contain" />
                   </div>
                   <div>
@@ -291,7 +291,7 @@ export default function Home() {
             >
               <div className="bg-[#f1f5fd] rounded-xl p-4 flex-1">
                 <div className="flex items-center">
-                  <div className="bg-[#d2dbea] p-2 rounded-lg mr-3">
+                  <div className="p-2 rounded-lg mr-3">
                     <Image src="/smart-contract.png" alt="Smart Contract Execution" width={24} height={24} className="object-contain" />
                   </div>
                   <div>
@@ -344,10 +344,10 @@ export default function Home() {
               transition={{ duration: 0.5 }}
               whileHover={{ y: -5 }}
             >
-              <div className="bg-[#f1f5fd] h-20 w-20 rounded-full flex items-center justify-center mb-3 p-5">
+              <div className="h-20 w-20 rounded-full flex items-center justify-center mb-3 p-5">
                 <Image src="/user.png" alt="User" width={32} height={32} className="object-contain" />
               </div>
-              <h3 className="text-sm font-medium text-[#2463eb] mb-1 font-heading">User</h3>
+              <h3 className="text-md font-medium text-[#2463eb] mb-1 font-heading">User</h3>
               <p className="text-xs text-gray-600 max-w-[120px] font-body">Gives natural language instructions</p>
             </motion.div>
             
@@ -357,7 +357,7 @@ export default function Home() {
               animate={{ x: [0, 5, 0] }}
               transition={{ repeat: Infinity, duration: 1.5 }}
             >
-              <div className="bg-[#e0e7f7] rounded-full p-2">
+              <div className="rounded-full p-2">
                 <Image src="/arrow.png" alt="Arrow" width={20} height={20} />
               </div>
             </motion.div>
@@ -371,10 +371,10 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.1 }}
               whileHover={{ y: -5 }}
             >
-              <div className="bg-[#f1f5fd] h-20 w-20 rounded-full flex items-center justify-center mb-3 p-5">
+              <div className="h-20 w-20 rounded-full flex items-center justify-center mb-3 p-5">
                 <Image src="/agent.png" alt="AI Agent" width={32} height={32} className="object-contain" />
               </div>
-              <h3 className="text-sm font-medium text-[#2463eb] mb-1 font-heading">AI Agent</h3>
+              <h3 className="text-md font-medium text-[#2463eb] mb-1 font-heading">AI Agent</h3>
               <p className="text-xs text-gray-600 max-w-[120px] font-body">Interprets and plans execution</p>
             </motion.div>
             
@@ -384,7 +384,7 @@ export default function Home() {
               animate={{ x: [0, 5, 0] }}
               transition={{ repeat: Infinity, duration: 1.5, delay: 0.1 }}
             >
-              <div className="bg-[#e0e7f7] rounded-full p-2">
+              <div className="rounded-full p-2">
                 <Image src="/arrow.png" alt="Arrow" width={20} height={20} />
               </div>
             </motion.div>
@@ -398,10 +398,10 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.2 }}
               whileHover={{ y: -5 }}
             >
-              <div className="bg-[#f1f5fd] h-20 w-20 rounded-full flex items-center justify-center mb-3 p-5">
+              <div className="h-20 w-20 rounded-full flex items-center justify-center mb-3 p-5">
                 <Image src="/multi-agent.png" alt="Multi-agent Orchestration" width={32} height={32} className="object-contain" />
               </div>
-              <h3 className="text-sm font-medium text-[#2463eb] mb-1 font-heading">Multi-agent</h3>
+              <h3 className="text-md font-medium text-[#2463eb] mb-1 font-heading">Multi-agent</h3>
               <p className="text-xs text-gray-600 max-w-[120px] font-body">Coordinates complex strategies</p>
             </motion.div>
             
@@ -411,7 +411,7 @@ export default function Home() {
               animate={{ x: [0, 5, 0] }}
               transition={{ repeat: Infinity, duration: 1.5, delay: 0.2 }}
             >
-              <div className="bg-[#e0e7f7] rounded-full p-2">
+              <div className="rounded-full p-2">
                 <Image src="/arrow.png" alt="Arrow" width={20} height={20} />
               </div>
             </motion.div>
@@ -425,10 +425,10 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.3 }}
               whileHover={{ y: -5 }}
             >
-              <div className="bg-[#f1f5fd] h-20 w-20 rounded-full flex items-center justify-center mb-3 p-5">
+              <div className="h-20 w-20 rounded-full flex items-center justify-center mb-3 p-5">
                 <Image src="/smart-contract.png" alt="Smart Contract Execution" width={32} height={32} className="object-contain" />
               </div>
-              <h3 className="text-sm font-medium text-[#2463eb] mb-1 font-heading">Execution</h3>
+              <h3 className="text-md font-medium text-[#2463eb] mb-1 font-heading">Execution</h3>
               <p className="text-xs text-gray-600 max-w-[120px] font-body">Securely executes transactions</p>
             </motion.div>
             
@@ -438,7 +438,7 @@ export default function Home() {
               animate={{ x: [0, 5, 0] }}
               transition={{ repeat: Infinity, duration: 1.5, delay: 0.3 }}
             >
-              <div className="bg-[#e0e7f7] rounded-full p-2">
+              <div className="rounded-full p-2">
                 <Image src="/arrow.png" alt="Arrow" width={20} height={20} />
               </div>
             </motion.div>
@@ -452,10 +452,10 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.4 }}
               whileHover={{ y: -5 }}
             >
-              <div className="bg-[#f1f5fd] h-20 w-20 rounded-full flex items-center justify-center mb-3 p-5">
+              <div className="h-20 w-20 rounded-full flex items-center justify-center mb-3 p-5">
                 <Image src="/onchain.png" alt="On-Chain Results" width={32} height={32} className="object-contain" />
               </div>
-              <h3 className="text-sm font-medium text-[#2463eb] mb-1 font-heading">Results</h3>
+              <h3 className="text-md font-medium text-[#2463eb] mb-1 font-heading">Results</h3>
               <p className="text-xs text-gray-600 max-w-[120px] font-body">Verifiable blockchain outcomes</p>
             </motion.div>
           </div>
@@ -493,7 +493,7 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
               >
-                <div className="bg-[#d2dbea] p-1.5 sm:p-2 rounded-md mr-2 sm:mr-3">
+                <div className="p-1.5 sm:p-2 rounded-md mr-2 sm:mr-3">
                   <Image src="/robot-agent.png" alt="Bot" width={16} height={16} className="sm:w-5 sm:h-5" />
                 </div>
                 <span className="text-xs sm:text-sm text-gray-600 font-body">Checking Lido, Ankr...</span>
@@ -518,7 +518,7 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
               >
-                <div className="bg-[#d2dbea] p-1.5 sm:p-2 rounded-md mr-2 sm:mr-3">
+                <div className="p-1.5 sm:p-2 rounded-md mr-2 sm:mr-3">
                   <Image src="/robot-agent.png" alt="Bot" width={16} height={16} className="sm:w-5 sm:h-5" />
                 </div>
                 <span className="text-xs sm:text-sm text-gray-600 font-body">Evaluates Aave, Compound, Morpho...</span>
@@ -543,7 +543,7 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.7 }}
               >
-                <div className="bg-[#d2dbea] p-1.5 sm:p-2 rounded-md mr-2 sm:mr-3">
+                <div className="p-1.5 sm:p-2 rounded-md mr-2 sm:mr-3">
                   <Image src="/robot-agent.png" alt="Bot" width={16} height={16} className="sm:w-5 sm:h-5" />
                 </div>
                 <span className="text-xs sm:text-sm text-gray-600 font-body">Auto-bridges, allocates LP</span>
@@ -582,59 +582,59 @@ export default function Home() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mt-6 sm:mt-10">
             <motion.div 
-              className="flex flex-col items-center text-center"
+              className="flex flex-col items-start text-left"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4 }}
               whileHover={{ y: -5 }}
             >
-              <div className="bg-[#3773f4] p-2 sm:p-3 rounded-full mb-2 sm:mb-4">
+              <div className="bg-[#3773f4] p-2 sm:p-3 rounded-lg mb-2 sm:mb-4">
                 <Image src="/star.png" alt="Premium" width={20} height={20} className="sm:w-6 sm:h-6" />
               </div>
-              <h3 className="text-xs sm:text-base font-medium mb-1 font-heading">Access premium orchestration logic</h3>
+              <h3 className="text-xs sm:text-base font-medium mb-1 font-heading">Access premium<br />orchestration logic</h3>
             </motion.div>
 
             <motion.div 
-              className="flex flex-col items-center text-center"
+              className="flex flex-col items-start text-left"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.1 }}
               whileHover={{ y: -5 }}
             >
-              <div className="bg-[#3773f4] p-2 sm:p-3 rounded-full mb-2 sm:mb-4">
+              <div className="bg-[#3773f4] p-2 sm:pb-3 sm:pr-4 sm:pl-3 sm:pt-3 rounded-lg mb-2 sm:mb-4">
                 <Image src="/broom.png" alt="Fine Tune" width={16} height={24} className="sm:w-5 sm:h-7" />
               </div>
-              <h3 className="text-xs sm:text-base font-medium mb-1 font-heading">Pay for agents fine tune</h3>
+              <h3 className="text-xs sm:text-base font-medium mb-1 font-heading">Pay for agents<br />fine tune</h3>
             </motion.div>
 
             <motion.div 
-              className="flex flex-col items-center text-center"
+              className="flex flex-col items-start text-left"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.2 }}
               whileHover={{ y: -5 }}
             >
-              <div className="bg-[#3773f4] p-2 sm:p-3 rounded-full mb-2 sm:mb-4">
+              <div className="bg-[#3773f4] p-2 sm:p-3 rounded-lg mb-2 sm:mb-4">
                 <Image src="/participate.png" alt="Governance" width={20} height={20} className="sm:w-6 sm:h-6" />
               </div>
-              <h3 className="text-xs sm:text-base font-medium mb-1 font-heading">Participate in AI governance</h3>
+              <h3 className="text-xs sm:text-base font-medium mb-1 font-heading">Participate in<br />AI governance</h3>
             </motion.div>
 
             <motion.div 
-              className="flex flex-col items-center text-center"
+              className="flex flex-col items-start text-left"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.3 }}
               whileHover={{ y: -5 }}
             >
-              <div className="bg-[#3773f4] p-2 sm:p-3 rounded-full mb-2 sm:mb-4">
+              <div className="bg-[#3773f4] p-2 sm:p-3 rounded-lg mb-2 sm:mb-4">
                 <Image src="/fund-execution.png" alt="Fund" width={20} height={20} className="sm:w-6 sm:h-6" />
               </div>
-              <h3 className="text-xs sm:text-base font-medium mb-1 font-heading">Fund execution pipelines</h3>
+              <h3 className="text-xs sm:text-base font-medium mb-1 font-heading">Fund execution<br />pipelines</h3>
             </motion.div>
           </div>
         </motion.div>
