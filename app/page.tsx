@@ -34,7 +34,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 pt-0 sm:pt-4 pb-8 sm:pb-24">
-        <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center">
           {/* Robot Arm Image */}
           <motion.div 
             className="w-full flex justify-center mb-2 sm:mb-8 -mt-6 sm:-mt-8"
@@ -647,11 +647,11 @@ export default function Home() {
           <Image src="/faktora-logo.png" alt="Faktora Logo" width={48} height={48} className="mr-2 hidden sm:block" />
         </div>
         <div className="flex items-center gap-3 sm:gap-6">
-          <Link href="#" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body" target="_blank" rel="noopener noreferrer">
+          <Link href="https://faktora-ai.gitbook.io/" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body" target="_blank" rel="noopener noreferrer">
             Docs
           </Link>
           <Link
-            href="#"
+            href="https://T.me/faktoraAI"
             className="text-xs sm:text-sm bg-[#2463eb] text-white px-3 sm:px-4 py-1 sm:py-2 rounded-md hover:bg-[#3773f4] transition-colors font-body"
             target="_blank"
             rel="noopener noreferrer"
