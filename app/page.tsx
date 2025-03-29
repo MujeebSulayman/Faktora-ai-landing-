@@ -10,8 +10,10 @@ export default function Home() {
       {/* Header */}
       <header className="max-w-6xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Image src="/faktora-logo.png" alt="Faktora Logo" width={28} height={28} className="mr-1 sm:hidden" />
-          <Image src="/faktora-logo.png" alt="Faktora Logo" width={48} height={48} className="mr-2 hidden sm:block" />
+          <a href="/" className="cursor-pointer">
+            <Image src="/faktora-logo.png" alt="Faktora Logo" width={28} height={28} className="mr-1 sm:hidden" />
+            <Image src="/faktora-logo.png" alt="Faktora Logo" width={48} height={48} className="mr-2 hidden sm:block" />
+          </a>
         </div>
         <div className="flex items-center gap-3 sm:gap-6">
           <Link href="https://faktora-ai.gitbook.io/" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body" target="_blank" rel="noopener noreferrer">
@@ -670,8 +672,10 @@ export default function Home() {
       {/* Footer */}
       <footer className="max-w-6xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Image src="/faktora-logo.png" alt="Faktora Logo" width={28} height={28} className="mr-1 sm:hidden" />
-          <Image src="/faktora-logo.png" alt="Faktora Logo" width={48} height={48} className="mr-2 hidden sm:block" />
+          <a href="/" className="cursor-pointer">
+            <Image src="/faktora-logo.png" alt="Faktora Logo" width={28} height={28} className="mr-1 sm:hidden" />
+            <Image src="/faktora-logo.png" alt="Faktora Logo" width={48} height={48} className="mr-2 hidden sm:block" />
+          </a>
         </div>
         <div className="flex items-center gap-3 sm:gap-6">
           <Link href="https://faktora-ai.gitbook.io/" className="text-black text-xs sm:text-sm hover:text-[#3773f4] font-body" target="_blank" rel="noopener noreferrer">
