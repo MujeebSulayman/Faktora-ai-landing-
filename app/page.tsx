@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="max-w-6xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
+      <header className="max-w-6xl mx-auto px-4 py-3 sm:py-6 flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="cursor-pointer">
             <Image src="/faktora-logo.png" alt="Faktora Logo" width={28} height={28} className="mr-1 sm:hidden" />
@@ -38,7 +38,7 @@ export default function Home() {
       <div className="flex flex-col items-center">
           {/* Robot Arm Image */}
           <motion.div 
-            className="w-full flex justify-center sm:justify-start sm:pl-[27%] mb-2 sm:mb-4 mt-0 sm:-mt-20"
+            className="w-full flex justify-center sm:justify-start sm:pl-[20%] mb-2 sm:mb-4 mt-0 sm:-mt-20"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
