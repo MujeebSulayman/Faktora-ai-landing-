@@ -14,7 +14,11 @@ const pixelifySans = Pixelify_Sans({
 export const metadata: Metadata = {
   title: "Faktora AI - Talk to AI. Execute on-chain. Automate Defi.",
   description: "Autonomous AI agents for DeFi execution and on-chain intelligence",
-  generator: 'v0.dev'
+
+  icons: {
+    icon: '/faktora-logo.png',
+    apple: '/faktora-logo.png',
+  }
 }
 
 export default function RootLayout({
