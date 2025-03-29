@@ -82,7 +82,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 py-8 sm:py-16 bg-[#f8f9fa]">
+      <section className="container mx-auto px-4 py-8 sm:py-16">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
             {/* Left side - Header */}
@@ -110,8 +110,15 @@ export default function Home() {
                   transition={{ duration: 0.5 }}
                   whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 >
-                  <div className="mb-3 p-2 inline-block rounded-lg bg-[#3773f4]">
-                    <Image src="/ai-wallet.png" alt="AI Wallet" width={24} height={24} className="sm:w-8 sm:h-8" />
+                  <div className="mb-3 p-2 inline-block rounded-md bg-[#3773f4]">
+                    <Image 
+                      src="/ai-wallet.png" 
+                      alt="AI Wallet" 
+                      width={24} 
+                      height={24} 
+                      className="sm:w-8 sm:h-8 w-6 h-6" 
+                      quality={100}
+                    />
                   </div>
                   <h3 className="text-base sm:text-lg font-medium mb-1 font-heading">AI Wallet Agents</h3>
                   <p className="text-xs sm:text-sm opacity-90 font-body">Autonomous wallets with smart execution logic.</p>
@@ -126,8 +133,15 @@ export default function Home() {
                   transition={{ duration: 0.5, delay: 0.1 }}
                   whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 >
-                  <div className="mb-3 p-2 inline-block rounded-lg bg-[#d2dbea]">
-                    <Image src="/multi.png" alt="Multi-agent orchestration" width={20} height={20} className="sm:w-6 sm:h-6" />
+                  <div className="mb-3 p-2 inline-block rounded-lg bg-[#D2DBEA]">
+                    <Image 
+                      src="/multi.png" 
+                      alt="Multi-agent orchestration" 
+                      width={20} 
+                      height={20} 
+                      className="sm:w-6 sm:h-6 w-5 h-5" 
+                      quality={100}
+                    />
                   </div>
                   <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb] font-heading">
                     Multi-agent orchestration
@@ -144,8 +158,15 @@ export default function Home() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 >
-                  <div className="mb-3 p-2 inline-block rounded-lg bg-[#d2dbea]">
-                    <Image src="/natural.png" alt="AI Wallet" width={20} height={20} className="sm:w-6 sm:h-6" />
+                  <div className="mb-3 p-2 inline-block rounded-lg bg-[#D2DBEA]">
+                    <Image 
+                      src="/natural.png" 
+                      alt="Natural Language" 
+                      width={20} 
+                      height={20} 
+                      className="sm:w-6 sm:h-6 w-5 h-5" 
+                      quality={100}
+                    />
                   </div>
                   <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb] font-heading">
                     Natural Language Acquisition
@@ -162,8 +183,15 @@ export default function Home() {
                   transition={{ duration: 0.5, delay: 0.3 }}
                   whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 >
-                  <div className="mb-3 p-2 inline-block rounded-lg bg-[#d2dbea]">
-                    <Image src="/unified.png" alt="AI Wallet" width={20} height={20} className="sm:w-6 sm:h-6" />
+                  <div className="mb-3 p-2 inline-block rounded-md bg-[#D2DBEA]">
+                    <Image 
+                      src="/unified.png" 
+                      alt="Unified Interface" 
+                      width={20} 
+                      height={20} 
+                      className="sm:w-6 sm:h-6 w-5 h-5" 
+                      quality={100}
+                    />
                   </div>
                   <h3 className="text-base sm:text-lg font-medium mb-1 text-[#2463eb] font-heading">
                     Unified Liquidity Access
