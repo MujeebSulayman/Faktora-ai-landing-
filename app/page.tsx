@@ -32,7 +32,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-4 pt-0 pb-8 sm:pb-24">
+      <section className="max-w-6xl mx-auto px-4 pt-12 pb-8 sm:pb-24">
       <div className="flex flex-col items-center">
           {/* Robot Arm Image */}
           <motion.div 
