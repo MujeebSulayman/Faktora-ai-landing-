@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="max-w-6xl mx-auto px-4 py-3 sm:py-6 flex justify-between items-center">
+      <header className="max-w-6xl mx-auto px-4 py-4 sm:py-6 flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="cursor-pointer">
             <Image src="/faktora-logo.png" alt="Faktora Logo" width={28} height={28} className="mr-1 sm:hidden" />
@@ -34,7 +34,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-4 pt-12 pb-8 sm:pb-24">
+      <section className="max-w-6xl mx-auto px-4 pt-0 sm:pt-12 pb-8 sm:pb-24">
       <div className="flex flex-col items-center">
           {/* Robot Arm Image */}
           <motion.div 
