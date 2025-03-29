@@ -2,14 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Bot, MessageSquare, Zap, FileText, Users } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="container mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
+      <header className="max-w-6xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
         <div className="flex items-center">
           <Image src="/faktora-logo.png" alt="Faktora Logo" width={28} height={28} className="mr-1 sm:hidden" />
           <Image src="/faktora-logo.png" alt="Faktora Logo" width={48} height={48} className="mr-2 hidden sm:block" />
@@ -33,11 +32,11 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 pt-0 sm:pt-4 pb-8 sm:pb-24">
+      <section className="max-w-6xl mx-auto px-4 pt-0 pb-8 sm:pb-24">
       <div className="flex flex-col items-center">
           {/* Robot Arm Image */}
           <motion.div 
-            className="w-full flex justify-center mb-2 sm:mb-8 -mt-6 sm:-mt-8"
+            className="w-full flex justify-center sm:justify-start sm:pl-[27%] mb-2 sm:mb-4 mt-0 sm:-mt-20"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -82,7 +81,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 py-8 sm:py-16">
+      <section className="max-w-6xl mx-auto px-4 py-8 sm:py-16">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
             {/* Left side - Header */}
@@ -205,7 +204,7 @@ export default function Home() {
       </section>
 
       {/* Architecture Flow Section */}
-      <section className="container mx-auto px-4 py-10 sm:py-32">
+      <section className="max-w-6xl mx-auto px-4 py-10 sm:py-24">
         <div className="max-w-5xl mx-auto">
           <motion.h2 
             className="text-2xl sm:text-3xl font-medium mb-8 sm:mb-12 text-center font-heading"
@@ -491,7 +490,7 @@ export default function Home() {
       </section>
 
       {/* Use Cases Section */}
-      <section className="container mx-auto px-4 py-8 sm:py-24">
+      <section className="max-w-6xl mx-auto px-4 py-8 sm:py-12">
         <div className="max-w-6xl mx-auto">
           <motion.h2 
             className="text-2xl sm:text-3xl font-medium pb-6 sm:pb-10 text-center font-heading"
@@ -582,7 +581,7 @@ export default function Home() {
       </section>
       
       {/* Token Section */}
-      <section className="container mx-auto px-4 py-8 sm:py-16 mb-4 sm:mb-8">
+      <section className="max-w-6xl mx-auto px-4 py-8 sm:py-16 mb-4 sm:mb-8">
         <motion.div 
           className="max-w-6xl mx-auto bg-[#2463eb] rounded-lg p-6 sm:p-10 text-white"
           initial={{ opacity: 0, y: 40 }}
@@ -669,7 +668,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="container mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
+      <footer className="max-w-6xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
         <div className="flex items-center">
           <Image src="/faktora-logo.png" alt="Faktora Logo" width={28} height={28} className="mr-1 sm:hidden" />
           <Image src="/faktora-logo.png" alt="Faktora Logo" width={48} height={48} className="mr-2 hidden sm:block" />
